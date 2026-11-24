@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de Cantor: desenvolvedor de sistemas em formação em Itumbiara, GO.">
+  <title>Cantor | Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- 1. Cabeçalho -->
+  <header class="cabecalho">
+    <a class="logo" href="#inicio">Cantor</a>
+    <nav class="menu" aria-label="Navegação principal">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <button id="botao-tema" class="botao-tema" type="button" aria-label="Alternar tema claro/escuro">
+      Tema
+    </button>
+  </header>
+
+  <main>
+
+    <!-- 2. Início -->
+    <section id="inicio" class="inicio">
+      <div class="inicio-texto">
+        <p>Olá, eu sou</p>
+        <h1>Cantor</h1>
+        <p class="area">Desenvolvedor de sistemas em formação</p>
+        <p>Crio sistemas que resolvem problemas reais, do banco de dados à interface.</p>
+        <div class="botoes">
+          <a class="botao botao-principal" href="#projetos">Ver projetos</a>
+          <a class="botao botao-secundario" href="#contato">Baixar currículo</a>
+        </div>
+      </div>
+      <img class="inicio-foto" src="imagens/foto.jpg" alt="Foto de Cantor" width="320" height="320">
+    </section>
+
+    <!-- 3. Sobre mim -->
+    <section id="sobre" class="sobre">
+      <img class="sobre-imagem" src="imagens/sobre.jpg" alt="Cantor trabalhando no computador" width="360" height="440">
+      <div class="sobre-texto">
+        <h2>Sobre mim</h2>
+        <p>Sou estudante do curso Técnico em Desenvolvimento de Sistemas no SENAI Itumbiara. Gosto de transformar ideias em programas que resolvem problemas reais.</p>
+        <p>Gosto de criar aplicativos e soluções com Python, bancos de dados e IoT. Meu objetivo é conseguir um estágio na área e continuar aprendendo com projetos reais.</p>
+        <ul class="dados">
+          <li><strong>Localização:</strong> Itumbiara, GO</li>
+          <li><strong>Formação:</strong> Técnico em Desenvolvimento de Sistemas, SENAI Itumbiara</li>
+          <li><strong>Interesses:</strong> programação, bancos de dados, IoT</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4. Habilidades -->
+    <section id="habilidades" class="habilidades">
+      <h2>Habilidades</h2>
+      <p>Linguagens e ferramentas que uso nos meus projetos.</p>
+      <ul class="lista-habilidades">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>SQL e SQLite</li>
+        <li>Git e GitHub</li>
+      </ul>
+    </section>
+
+    <!-- 5. Projetos -->
+    <section id="projetos" class="projetos">
+      <h2>Projetos</h2>
+      <p>Trabalhos que fiz durante o curso e por conta própria.</p>
+      <div class="lista-projetos">
+
+        <article class="projeto">
+          <img src="imagens/freesound.png" alt="Tela inicial do aplicativo FreeSound" width="400" height="240">
+          <div class="projeto-corpo">
+            <h3>FreeSound</h3>
+            <p>Aplicativo desktop que conecta músicos independentes a produtores.</p>
+            <ul class="tecnologias">
+              <li>Python</li>
+              <li>Flet</li>
+              <li>SQLite</li>
+            </ul>
+            <p class="links">
+              <a href="#">Ver projeto</a>
+              <a href="#">Código</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="projeto">
+          <img src="imagens/integra.png" alt="Esquema da solução de vagas de estacionamento em tempo real" width="400" height="240">
+          <div class="projeto-corpo">
+            <h3>INTEGRA 2026</h3>
+            <p>Solução IoT que mostra em tempo real as vagas livres no estacionamento da escola.</p>
+            <ul class="tecnologias">
+              <li>IoT</li>
+              <li>Sistemas embarcados</li>
+            </ul>
+            <p class="links">
+              <a href="#">Ver projeto</a>
+              <a href="#">Código</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="projeto">
+          <img src="imagens/portfolio.png" alt="Captura de tela deste portfólio" width="400" height="240">
+          <div class="projeto-corpo">
+            <h3>Este portfólio</h3>
+            <p>Site pessoal com tema claro/escuro, feito do zero e publicado no GitHub.</p>
+            <ul class="tecnologias">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <p class="links">
+              <a href="#">Ver projeto</a>
+              <a href="#">Código</a>
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 6. Contato -->
+    <section id="contato" class="contato">
+      <div class="contato-texto">
+        <h2>Vamos conversar?</h2>
+        <p>Estou aberto a estágio, freelas e parcerias.</p>
+        <ul class="canais">
+          <li><strong>E-mail:</strong> <a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/seu-usuario">github.com/seu-usuario</a></li>
+        </ul>
+      </div>
+
+      <form id="formulario-contato" class="formulario" action="#" method="post">
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" type="text" required>
+
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+        <button class="botao botao-principal" type="submit">Enviar mensagem</button>
+        <p id="confirmacao" class="confirmacao" role="status" hidden></p>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- 7. Rodapé -->
+  <footer class="rodape">
+    <p>&copy; 2026 Cantor. Feito com HTML, CSS e JavaScript.</p>
+    <p><a href="https://github.com/seu-usuario">GitHub</a></p>
+  </footer>
+
+</body>
+</html>
